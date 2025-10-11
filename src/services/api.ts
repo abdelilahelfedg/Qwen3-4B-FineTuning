@@ -15,7 +15,7 @@ export async function generateDarijaResponse(question: string): Promise<Generate
     'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
     'Content-Type': 'application/json',
   };
-
+  
   const response = await fetch(apiUrl, {
     method: 'POST',
     headers,
